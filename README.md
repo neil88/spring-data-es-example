@@ -38,11 +38,9 @@ mvn spring-boot:run
 * Once application starts successfully, open Elastic plugin in Google Chrome.
 * You should be able to see our data being stored in elastic server. Refer image below
 
-![Alt text](https://github.com/Nasruddin/elasticsearch-spring-boot-spring-data/blob/master/elastic-plugin.png?raw=true "Optional Title")
 
 * Now open a REST Client or CURL. I am using Postman. And add some data to indices.
 
-![Alt text](https://github.com/Nasruddin/elasticsearch-spring-boot-spring-data/blob/master/postman.png?raw=true "Optional Title")
 
 ## Extra Points
 Additional endpoints exposed to get elastic details and clearing indices.
