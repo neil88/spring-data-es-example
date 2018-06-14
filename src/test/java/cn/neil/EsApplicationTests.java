@@ -1,8 +1,9 @@
-package starter;
+package cn.neil;
 
 
 import cn.neil.EsApplication;
 import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,7 +16,7 @@ import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = EsApplication.class)
-public class ElasticsearchSpringDataApplicationTests {
+public class EsApplicationTests {
 
 
     @Autowired
@@ -27,6 +28,11 @@ public class ElasticsearchSpringDataApplicationTests {
         elasticsearchTemplate.createIndex(Movie.class);
         elasticsearchTemplate.putMapping(Movie.class);
         elasticsearchTemplate.refresh(Movie.class);
+
+    }
+
+    @Test
+    public void t(){
 
     }
 
